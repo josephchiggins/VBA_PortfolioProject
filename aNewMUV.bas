@@ -194,60 +194,7 @@ ActiveSheet.Paste
 
 ws.Range("$A$1:$X$" & lastRow).AutoFilter Field:=1, Criteria1:=maxDate
   
-  
-
-'We'll fix this later.
-
- ' Find the last row with data in column J
-    'lastRow = ws.Cells(ws.Rows.Count, "J").End(xlUp).Row
-
-    ' Get the newest date in column J
-    'newestDate = GetNewestDate(ws.Range("J2:J" & lastRow))
-
-    ' Set the range to apply the filter by date
-    'Set rngDate = ws.Range("J1:J" & lastRow)
-
-    ' Clear existing filters
-   '' ws.AutoFilterMode = False
-
-    ' Apply filter to show only the newest date
-    'rngDate.AutoFilter Field:=1, Criteria1:="=" & Format(newestDate, "m\d")
-
-    ' Set the range to sort column F
-    'Set rngSort = ws.Range("F1:F" & lastRow)
-
-    ' Sort column F from smallest to largest
-    'With ws.Sort
-     '   .SortFields.Clear
-      '  .SortFields.Add Key:=rngSort, _
-       '                 SortOn:=xlSortOnValues, _
-        '                Order:=xlAscending, _
-         '               DataOption:=xlSortNormal
-        '.SetRange ws.UsedRange
-        '.Header = xlYes
-        '.MatchCase = False
-        '.Apply
-    'End With
-End Sub
-
-'Function GetNewestDate(rng As Range) As Date
- '   Dim cell As Range
-  '  Dim newestDate As Date
-
-   ' newestDate = rng.Cells(1).Value
-
-    'For Each cell In rng
-     '   If IsDate(cell.Value) Then
-      '      If cell.Value > newestDate Then
-       '         newestDate = cell.Value
-        '    End If
-        'End If
-   ' Next cell
-
-    'GetNewestDate = newestDate
-
-'End Function
-
+--------------
 
 Sub acFillMUVrepMonthRecurr()
     
