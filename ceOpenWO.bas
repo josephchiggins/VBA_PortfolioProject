@@ -55,7 +55,10 @@ Sub ZWoEmail()
     Set oEmail = oOutlook.CreateItem(0) ' 0 = olMailItem
     
     With oEmail
-        .To = "madan.pitchamuthu@icumed.com;Judith.McDonald@icumed.com;Keith.Martin@icumed.com;Robert.Hansen@icumed.com;Micki.Ellefsen@icumed.com;Noureddine.Atif@icumed.com;ramon.camac@icumed.com;Tien.Dieu@icumed.com;Tracy.Parry@icumed.com;timothy.hansen@icumed.com;Aaron.Hernandez2@icumed.com;newton.santana@icumed.com;breanna.padilla@icumed.com;adam.hancock@icumed.com;Karina.Crittenden@icumed.com;Joni.Giles@icumed.com;andreas.outlar@icumed.com;adam.kesling@icumed.com;chris.luebke@icumed.com;shaun.mason@icumed.com;michael.stuart@icumed.com"
+        .To = "madan.pitchamuthu@icumed.com;Judith.McDonald@icumed.com; " & _
+            "breanna.padilla@icumed.com; " & _
+            "adam.hancock@icumed.com; kyle.brady@icumed.com; " & _
+            "cj.sudbury@icumed.com; joseph.gutierrez1@icumed.com; " & _
         .CC = ""
         .BCC = ""
         .Subject = "SLC Open Work Order Report - June 2026"
